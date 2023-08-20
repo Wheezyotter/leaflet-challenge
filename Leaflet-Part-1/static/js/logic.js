@@ -127,7 +127,7 @@ function createMap(earthquakes) {
         for (let j = 0; j < depths.length; j++) {
             div.innerHTML += 
             '<i style=background:' + markerColor(depths[j] + 1) + '></i>' + 
-            depths[j] + (depths[j + 1] ? '&ndash;' + depths[j+ 1] + 'km<br>' : '+');
+            depths[j] + (depths[j + 1] ? '&ndash;' + depths[j+ 1] + 'km<br>' : '+ km');
         }
         return div;
   };
